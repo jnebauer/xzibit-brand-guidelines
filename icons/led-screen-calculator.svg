@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Screen bezel -->
+  <rect x="6" y="10" width="52" height="36" rx="3" stroke="#19B1A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Stand neck -->
+  <line x1="32" y1="46" x2="32" y2="54" stroke="#19B1A1" stroke-width="2" stroke-linecap="round"/>
+  <!-- Stand base -->
+  <line x1="22" y1="54" x2="42" y2="54" stroke="#19B1A1" stroke-width="2" stroke-linecap="round"/>
+  <!-- Pixel grid — 4 columns × 3 rows of LED dots -->
+  <circle cx="18" cy="22" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="28" cy="22" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="38" cy="22" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="48" cy="22" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="18" cy="32" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="28" cy="32" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="38" cy="32" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="48" cy="32" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <!-- Bottom row — some filled to suggest active pixels -->
+  <circle cx="18" cy="40" r="2.5" fill="#19B1A1"/>
+  <circle cx="28" cy="40" r="2.5" fill="#19B1A1"/>
+  <circle cx="38" cy="40" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+  <circle cx="48" cy="40" r="2.5" stroke="#19B1A1" stroke-width="1.5"/>
+</svg>

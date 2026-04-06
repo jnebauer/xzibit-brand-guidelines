@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Palette shape -->
+  <path d="M32 8C19.85 8 10 17.85 10 30c0 6.63 3.05 12.55 7.85 16.5C19.9 48.3 22 50 22 52.5A3.5 3.5 0 0 0 25.5 56h13A3.5 3.5 0 0 0 42 52.5c0-2.5 2.1-4.2 4.15-6C50.95 42.55 54 36.63 54 30 54 17.85 44.15 8 32 8Z" stroke="#19B1A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Colour dots on palette -->
+  <circle cx="22" cy="28" r="3" stroke="#19B1A1" stroke-width="2"/>
+  <circle cx="32" cy="20" r="3" stroke="#19B1A1" stroke-width="2"/>
+  <circle cx="42" cy="28" r="3" stroke="#19B1A1" stroke-width="2"/>
+  <circle cx="38" cy="38" r="3" stroke="#19B1A1" stroke-width="2"/>
+  <circle cx="26" cy="38" r="3" stroke="#19B1A1" stroke-width="2"/>
+  <!-- Thumb hole -->
+  <circle cx="32" cy="44" r="3" stroke="#19B1A1" stroke-width="2"/>
+</svg>

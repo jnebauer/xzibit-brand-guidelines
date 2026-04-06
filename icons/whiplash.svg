@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Lightning bolt -->
+  <path d="M38 8 L24 34 L34 34 L26 56 L46 26 L35 26 Z" stroke="#19B1A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Speed lines left -->
+  <line x1="6" y1="22" x2="16" y2="22" stroke="#19B1A1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="8" y1="30" x2="18" y2="30" stroke="#19B1A1" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="6" y1="38" x2="16" y2="38" stroke="#19B1A1" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
