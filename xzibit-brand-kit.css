@@ -1,0 +1,95 @@
+/* ============================================================================
+   XZIBIT BRAND KIT — drop-in CSS variables
+   Source: xzibit-brand-guidelines/index.html
+   Use:   import once at the top of globals.css (or paste into :root block)
+   ============================================================================ */
+
+:root {
+  /* Primary palette */
+  --xz-teal:        #19B1A1;  /* Primary brand colour — buttons, accents, links */
+  --xz-teal-dark:   #0D8A7E;  /* Hover state for teal CTAs */
+  --xz-dark:        #1D252D;  /* Reversed-logo background, headings on light */
+  --xz-charcoal:    #252E38;  /* Surfaces on dark mode */
+  --xz-grey:        #888A8B;  /* Secondary text, muted UI */
+  --xz-light-grey:  #D8DADB;  /* Borders, dividers */
+  --xz-off-white:   #F4F4F2;  /* App background — primary light surface */
+  --xz-white:       #FFFFFF;
+  --xz-black:       #0A0C0E;  /* Never use pure #000 */
+  --xz-red:         #C0392B;  /* Errors / destructive only */
+
+  /* Type */
+  --xz-font:        'HurmeGeometric','League Spartan',system-ui,sans-serif;
+
+  /* Radii (matches brand-guidelines) */
+  --xz-r4:  4px;
+  --xz-r6:  6px;
+  --xz-r8:  8px;
+  --xz-r12: 12px;
+}
+
+/* Tailwind theme extension equivalent — paste into tailwind.config.ts:
+extend: {
+  colors: {
+    xz: {
+      teal:    '#19B1A1',
+      tealDk:  '#0D8A7E',
+      dark:    '#1D252D',
+      charcoal:'#252E38',
+      grey:    '#888A8B',
+      lgrey:   '#D8DADB',
+      ow:      '#F4F4F2',
+      red:     '#C0392B',
+    },
+  },
+  fontFamily: {
+    xz: ['HurmeGeometric','League Spartan','system-ui','sans-serif'],
+  },
+},
+*/
+
+/* Global brand defaults — apply to body of any new app */
+body.xz {
+  background: var(--xz-off-white);
+  color: var(--xz-dark);
+  font-family: var(--xz-font);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Brand button — drop-in class */
+.xz-btn {
+  background: var(--xz-teal);
+  color: var(--xz-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--xz-r6);
+  font-family: var(--xz-font);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.xz-btn:hover { background: var(--xz-teal-dark); }
+.xz-btn:disabled { background: var(--xz-grey); cursor: not-allowed; }
+
+/* Brand card — drop-in for the launcher app tiles */
+.xz-card {
+  background: var(--xz-white);
+  border: 1px solid var(--xz-light-grey);
+  border-radius: var(--xz-r12);
+  padding: 24px;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.xz-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--xz-teal);
+  box-shadow: 0 8px 24px rgba(29,37,45,0.08);
+}
+
+/* Brand rules
+   - Reversed logo (white/teal): only on #1D252D
+   - Standard logo: only on white / off-white
+   - Never on mid-grey #888A8B
+   - Never use pure black #000000 */

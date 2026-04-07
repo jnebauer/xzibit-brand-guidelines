@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Xzibit Brand Guidelines</title>
+<link rel="stylesheet" href="xzibit-brand-kit.css" />
+<style>
+  body { margin:0; padding:48px 32px; max-width:960px; margin-inline:auto; }
+  h1 { font-size:48px; margin:0 0 8px; letter-spacing:-0.5px; }
+  h2 { font-size:24px; margin-top:48px; border-bottom:1px solid var(--xz-light-grey); padding-bottom:8px; }
+  .swatches { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px; }
+  .swatch { border-radius:var(--xz-r8); overflow:hidden; border:1px solid var(--xz-light-grey); }
+  .swatch .chip { height:80px; }
+  .swatch .meta { padding:10px 12px; font-size:12px; }
+  .swatch .name { font-weight:600; }
+  .swatch .hex { color:var(--xz-grey); font-family:ui-monospace,monospace; }
+  code { background:var(--xz-white); border:1px solid var(--xz-light-grey); padding:2px 6px; border-radius:4px; font-size:13px; }
+</style>
+</head>
+<body class="xz">
+  <h1>Xzibit Brand Guidelines</h1>
+  <p style="color:var(--xz-grey);">Live reference for the Xzibit visual system. Drop-in CSS at <code>xzibit-brand-kit.css</code>.</p>
+
+  <h2>Colour palette</h2>
+  <div class="swatches">
+    <div class="swatch"><div class="chip" style="background:#19B1A1"></div><div class="meta"><div class="name">Teal</div><div class="hex">#19B1A1</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#0D8A7E"></div><div class="meta"><div class="name">Teal Dark</div><div class="hex">#0D8A7E</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#1D252D"></div><div class="meta"><div class="name">Dark</div><div class="hex">#1D252D</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#252E38"></div><div class="meta"><div class="name">Charcoal</div><div class="hex">#252E38</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#888A8B"></div><div class="meta"><div class="name">Grey</div><div class="hex">#888A8B</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#D8DADB"></div><div class="meta"><div class="name">Light Grey</div><div class="hex">#D8DADB</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#F4F4F2"></div><div class="meta"><div class="name">Off White</div><div class="hex">#F4F4F2</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#C0392B"></div><div class="meta"><div class="name">Red</div><div class="hex">#C0392B</div></div></div>
+  </div>
+
+  <h2>Typography</h2>
+  <p style="font-family:var(--xz-font); font-size:32px; margin:0;">HurmeGeometric / League Spartan</p>
+  <p>Body copy uses the brand font stack with weight 400 and line-height 1.6.</p>
+
+  <h2>Components</h2>
+  <button class="xz-btn">Primary button</button>
+  <div class="xz-card" style="margin-top:16px;max-width:320px;">
+    <strong>Card example</strong>
+    <p style="margin:6px 0 0;color:var(--xz-grey);font-size:14px;">Standard launcher tile.</p>
+  </div>
+
+  <h2>Rules</h2>
+  <ul>
+    <li>Reversed logo only on <code>#1D252D</code>.</li>
+    <li>Standard logo only on white / off-white.</li>
+    <li>Never on mid-grey <code>#888A8B</code>.</li>
+    <li>Never use pure black <code>#000000</code>.</li>
+  </ul>
+</body>
+</html>
